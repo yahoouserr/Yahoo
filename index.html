@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./src/yahoo-icon.svg" type="image/x-icon" />
+    <script defer src="script.js"></script>
+    <script defer src="app.js"></script>
+    <title>yahoo</title>
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <img class="main-logo" src="./src/yahoo logo.png" alt="Yahoo logo" />
+        <nav>
+          <ul>
+            <li class="nav-link"><a href="">Help</a></li>
+            <li class="nav-link"><a href="">Terms</a></li>
+            <li class="nav-link"><a href="">Privacy</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="form-container">
+          <img src="./src/yahoo logo.png" alt="Yahoo logo" class="secondary-logo" />
+          <p class="username-holder none">your name</p>
+          <h1 class="title">Sign in</h1>
+          <h2 class="subtitle">using your Yahoo account</h2>
+          <form>
+            <div class="first-step">
+              <div class="input-group">
+                <!-- prettier-ignore -->
+                <input id="username" placeholder="Username, Email or mobile" type="email" class="input username-input" />
+                <i class="far fa-envelope icon"></i>
+              </div>
+              <p class="error-message phase-one-alert none">Sorry, we don't recognize this email.</p>
+              <input id="next" type="button" class="btn btn-next" value="Next" />
+              <div class="fgt-container">
+                <div class="check-container">
+                  <input type="checkbox" name="" id="" />
+                  <a href="#" class="link">Stay signed in</a>
+                </div>
+                <a href="#" class="link">Forgot username?</a>
+              </div>
+              <a type="button" class="btn btn-secondary">Create an account</a>
+              <span>Or, continue with</span>
+              <button type="button" class="btn btn-google">
+                <img src="./src/google.svg" alt="" srcset="" class="google-icon" />
+                <span class="ggl">Google</span>
+              </button>
+            </div>
+
+            <!-- ===================================================== -->
+
+            <div class="second-step none">
+              <div class="input-group">
+                <input id="password" placeholder="Password" type="password" class="input password-input" />
+                <div class="show-password-container">
+                  <i class="fa-solid fa-eye pass-icon"></i>
+                  <i class="fa-solid fa-eye-slash pass-icon none"></i>
+                </div>
+                <p class="error-message phase-two-alert none">wrong password or email.</p>
+              </div>
+              <input id="submit" type="submit" class="btn btn-next btn-submit" value="Next" />
+              <a href="#" class="link fgt-secondPhase">Forgot username?</a>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
